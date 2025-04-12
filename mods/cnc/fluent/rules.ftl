@@ -7,7 +7,7 @@ options-tech-level =
     .unrestricted = Unrestricted
 
 checkbox-require-anypower =
-    .label = Require any power
+    .label = Require basic power
     .description = Require building power production to build structures
 
 checkbox-redeployable-mcvs =
