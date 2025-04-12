@@ -77,6 +77,13 @@ Player:
 		Name: options-tech-level.unrestricted
 		Prerequisites: techlevel.low, techlevel.medium, techlevel.high, techlevel.abilities, techlevel.superweapons
 		Id: unrestricted
+	LobbyPrerequisiteCheckbox@GLOBALANYPOWER:
+		ID: require-anypower
+		Label: checkbox-require-anypower.label
+		Description: checkbox-require-anypower.description
+		Enabled: False
+		DisplayOrder: 10
+		Prerequisites: anypower
 	GrantConditionOnPrerequisiteManager:
 	ResourceStorageWarning:
 		TextNotification: notification-silos-needed

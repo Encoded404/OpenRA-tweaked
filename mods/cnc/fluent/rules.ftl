@@ -6,6 +6,10 @@ options-tech-level =
     .no-powers = No abilities
     .unrestricted = Unrestricted
 
+checkbox-require-anypower =
+    .label = Require any power
+    .description = Require building power production to build structures
+
 checkbox-redeployable-mcvs =
     .label = Redeployable MCVs
     .description = Allows Construction Yards to undeploy
