@@ -49,6 +49,10 @@ function makelauncher()
 
 	TAG_TYPE="${TAG%%-*}"
 	TAG_VERSION="${TAG#*-}"
+
+    # Strip leading 'v' from version numbers if present
+    TAG_VERSION="${TAG_VERSION#v}"
+
 	BACKWARDS_TAG="${TAG_VERSION}-${TAG_TYPE}"
 
 	convert "${ARTWORK_DIR}/${MOD_ID}_16x16.png" "${ARTWORK_DIR}/${MOD_ID}_24x24.png" "${ARTWORK_DIR}/${MOD_ID}_32x32.png" "${ARTWORK_DIR}/${MOD_ID}_48x48.png" "${ARTWORK_DIR}/${MOD_ID}_256x256.png" "${BUILTDIR}/${MOD_ID}.ico"
