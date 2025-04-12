@@ -6,6 +6,7 @@ on:
     - 'release-*'
     - 'playtest-*'
     - 'devtest-*'
+    - 'v*'
 
 permissions:
   contents: write  #  for release creation (svenstaro/upload-release-action)
