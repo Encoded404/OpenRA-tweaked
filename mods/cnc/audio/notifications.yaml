@@ -39,14 +39,14 @@ Speech:
 		Reinforce: reinfor1
 		Repairing: repair1
 		SelectTarget: select1
-		SilosNeeded: silos1
+		SilosNeeded: silent
 		StartGame:
 		GameLoaded:
 		GameSaved:
 		Training: bldging1
 		UnitDestroyed: dead1
-		UnitLost: unitlost
-		UnitReady: unitredy
+		UnitLost: silent
+		UnitReady: silent
 		Win: accom1
 	DisablePrefixes: AirstrikeReady, BaseAttack, Building, BuildingCannotPlaceAudio, BuildingInProgress, BuildingLost, Cancelled, CivilianBuildingCaptured, CivilianKilled, ConstructionComplete, EnemyUnitsApproaching, EnemyStructureDestroyed, EnemyPlanesApproaching, HarvesterAttack, HarvesterLost, InsufficientPower, IonCannonCharging, IonCannonReady, Leave, Lose, LowPower, MissionAccomplished, MissionFailed, NewOptions, NoBuild, NodStructureDestroyed, NotReady, NuclearWarheadApproaching, NuclearWeaponAvailable, NuclearWeaponLaunched, OnHold, PrimaryBuildingSelected, Reinforce, Repairing, SelectTarget, SilosNeeded, Training, UnitLost, UnitReady, Win
 
