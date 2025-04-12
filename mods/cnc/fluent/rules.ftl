@@ -2,7 +2,8 @@
 options-tech-level =
     .low = Low
     .medium = Medium
-    .no-powers = No Superpowers
+    .no-superweapons = No Superweapons
+    .no-powers = No abilities
     .unrestricted = Unrestricted
 
 checkbox-redeployable-mcvs =

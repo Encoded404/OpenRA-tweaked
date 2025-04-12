@@ -744,7 +744,7 @@ HQ:
 		RequiresCondition: !lowpower
 	AirstrikePower:
 		PauseOnCondition: lowpower
-		Prerequisites: ~techlevel.superweapons
+		Prerequisites: ~techlevel.abilities
 		Icon: airstrike
 		ChargeInterval: 7500
 		SquadSize: 3
