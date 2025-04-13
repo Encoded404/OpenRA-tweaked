@@ -65,14 +65,14 @@ Player:
 		Name: options-tech-level.medium
 		Prerequisites: techlevel.low, techlevel.medium
 		Id: medium
+	ProvidesTechPrerequisite@nopowers:
+		Name: options-tech-level.no-powers
+		Prerequisites: techlevel.low, techlevel.medium, techlevel.high
+		Id: nopowers
 	ProvidesTechPrerequisite@nosuperweapons:
 		Name: options-tech-level.no-superweapons
-		Prerequisites: techlevel.low, techlevel.medium, techlevel.high
-		Id: nosuperweapons
-	ProvidesTechPrerequisite@nosuper:
-		Name: options-tech-level.no-powers
 		Prerequisites: techlevel.low, techlevel.medium, techlevel.high, techlevel.abilities
-		Id: nopowers
+		Id: nosuperweapons
 	ProvidesTechPrerequisite@all:
 		Name: options-tech-level.unrestricted
 		Prerequisites: techlevel.low, techlevel.medium, techlevel.high, techlevel.abilities, techlevel.superweapons
