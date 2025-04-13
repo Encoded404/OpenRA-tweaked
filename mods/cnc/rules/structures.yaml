@@ -1357,3 +1357,69 @@ ANYHQ:
 	Interactable:
 	Tooltip:
 		Name: actor-anyhq-name
+
+# custom content below
+
+SHIELDGEN:
+	Inherits: ^BaseBuilding
+	Inherits@IDISABLE: ^DisabledOverlay
+	RenderSprites:
+		Image: shieldgen
+	PlaceBuildingVariants:
+		Actors: shieldgen.right, shieldgen.down, shieldgen.left
+		Facings: 0, 64, 128, 192
+	HitShape:
+		TargetableOffsets: 0,0,0 #, 0,512,128, 420,-598,213 # dont define any additional hitpoints yet
+		Type: Rectangle
+			TopLeft: -1024, -384
+			BottomRight: 1024, 1024
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: actor-shieldgen.name
+	Buildable:
+		BuildPaletteOrder: 100
+		Queue: Support.GDI, Support.Nod
+		#Prerequisites: anyhq, ~techlevel.high
+		BuildDuration: 230
+		Description: actor-shieldgen.description
+
+	ShieldVisuals:
+        HitSequence: shield-hit
+        Palette: effect
+        RequiresCondition: !build-incomplete && !lowpower
+
+	Shield:
+        HP: 80000
+        RegenRate: 100
+        RegenDelay: 75
+        DamageModifier: 100
+        Color: 00B7FF80
+        ShowBar: true
+        HitSound: shield-hit.aud
+        EffectiveAgainst: EMP, Energy
+        ImmuneAgainst: Fire
+
+shieldgen.right:
+    Inherits: SHIELDGEN
+    RenderSprites:
+        Image: shieldgen.right
+    Buildable:
+        Prerequisites: ~disabled
+        Queue:
+
+shieldgen.down:
+    Inherits: SHIELDGEN
+    RenderSprites:
+        Image: shieldgen.down
+    Buildable:
+        Prerequisites: ~disabled
+        Queue:
+
+shieldgen.left:
+    Inherits: SHIELDGEN
+    RenderSprites:
+        Image: shieldgen
+    Buildable:
+        Prerequisites: ~disabled
+        Queue:

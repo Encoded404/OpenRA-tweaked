@@ -22,14 +22,24 @@ namespace OpenRA
 
 		readonly Func<Hotkey> getValue;
 
-		public HotkeyReference()
+		public HotkeyReference(string special = "")
 		{
 			getValue = Invalid;
+			Console.WriteLine("HotkeyReference created: Invalid");
+
+			if (special != "")
+			{
+				Console.WriteLine("HotkeyReference value called from: " + special);
+			}
 		}
 
 		internal HotkeyReference(Func<Hotkey> getValue)
 		{
 			this.getValue = getValue;
+			Console.WriteLine("HotkeyReference created: " + getValue());
+			Console.WriteLine("HotkeyReference value set to: " + GetValue());
+			string caller = new string(Environment.StackTrace);
+			Console.WriteLine("HotkeyReference value called from: \n" + caller);
 		}
 
 		public Hotkey GetValue()
@@ -39,7 +49,8 @@ namespace OpenRA
 
 		public bool IsActivatedBy(KeyInput e)
 		{
-			var currentValue = getValue();
+			Hotkey currentValue = getValue();
+			Console.WriteLine($"HotkeyReference: key setting: {currentValue.Key} pressed key: {e.Key}, modifier setting: {currentValue.Modifiers} pressed modifier: {e.Modifiers}");
 			return currentValue.Key == e.Key && currentValue.Modifiers == e.Modifiers;
 		}
 	}

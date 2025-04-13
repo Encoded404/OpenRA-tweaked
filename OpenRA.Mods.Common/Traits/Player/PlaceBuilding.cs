@@ -42,7 +42,7 @@ namespace OpenRA.Mods.Common.Traits
 		public readonly string CannotPlaceTextNotification = null;
 
 		[Desc("Hotkey to toggle between PlaceBuildingVariants when placing a structure.")]
-		public readonly HotkeyReference ToggleVariantKey = new();
+		public readonly HotkeyReference ToggleVariantKey = new("ToggleVariantKey");
 
 		public override object Create(ActorInitializer init) { return new PlaceBuilding(this); }
 	}

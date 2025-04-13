@@ -32,3 +32,8 @@ ProductionTypeAircraft: U
 	Description: hotkey-description-productiontypeaircraft
 	Types: Production
 	Contexts: player
+
+ToggleVariant: K
+	Description: hotkey-description-togglevariant
+	Types: Production
+	Contexts: player

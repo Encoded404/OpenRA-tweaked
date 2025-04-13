@@ -318,12 +318,24 @@ namespace OpenRA.Mods.Common.Orders
 
 		bool IOrderGenerator.HandleKeyPress(KeyInput e)
 		{
+			Console.WriteLine("following key pressed under building placement: " + e.Key);
 			if (variants.Length > 0 && placeBuildingInfo.ToggleVariantKey.IsActivatedBy(e))
 			{
+				Console.WriteLine("Switching building variant");
 				if (++variant >= variants.Length)
 					variant = 0;
 
 				return true;
+			}
+
+			if (variants.Length <= 0)
+			{
+				Console.WriteLine("No building variants available");
+			}
+
+			if (!placeBuildingInfo.ToggleVariantKey.IsActivatedBy(e))
+			{
+				Console.WriteLine("correct key not pressed");
 			}
 
 			return false;

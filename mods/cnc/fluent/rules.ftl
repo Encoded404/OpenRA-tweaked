@@ -570,6 +570,18 @@ actor-vehicleproduction-name = Vehicle Production
 actor-anypower-name = Power Generation
 actor-anyhq-name = Communications Center
 
+actor-shieldgen =
+    .name = Shield Generator
+    .description =
+    Provides a shield in front of it.
+    Requires power to operate.
+      blocks all projectiles
+    use the variant key to rotate
+    .encyclopedia =
+    Provides a shield in front of it, absorbing damage. The shield is not permanent and will eventually run out of energy. recharges when not shot at.
+
+    It can be destroyed by enemy fire, so protect it with your other defenses.
+
 ## tech.yaml
 actor-v19-husk-name = Oil Derrick (Destroyed)
 actor-hosp-husk-name = Hospital (Destroyed)

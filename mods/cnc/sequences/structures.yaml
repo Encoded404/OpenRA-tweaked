@@ -763,3 +763,107 @@ miss.husk:
 			DESERT: mbMISS.des
 		Length: *
 		Offset: 0,1
+
+shieldgen:
+	Defaults:
+		Filename: gun.shp
+	idle:
+		Filename: gun.shp
+		Start: 0
+	icon:
+		Filename: gunicnh.tem
+
+    # Shield effect sequences
+	idle-shield: shldgenidle.shp  # Ambient shield glow
+		Start: 0
+		Length: 6
+		Tick: 100
+		ZOffset: 2048
+
+	shield-hit: shldgenhit.shp  # Shield getting hit
+		Start: 0
+		Length: 5
+		Tick: 60
+		ZOffset: 2048
+
+	make:
+		Filename: gunmake.shp
+		Length: *
+		Tick: 80
+
+shieldgen.right:
+	Defaults:
+		Filename: hand.shp
+	idle:
+		Filename: hand.shp
+		Start: 0
+	icon:
+		Filename: gunicnh.tem
+
+    # Shield effect sequences
+	idle-shield: shldgenidle.shp  # Ambient shield glow
+		Start: 0
+		Length: *
+		Tick: 100
+
+	shield-hit: shldgenhit.shp  # Shield getting hit
+		Start: 0
+		Length: *
+		Tick: 60
+
+	make:
+		Filename: gunmake.shp
+		Length: *
+		Tick: 80
+
+shieldgen.down:
+	Defaults:
+		Filename: gun.shp
+	idle:
+		Filename: gun.shp
+		Start: 0
+	icon:
+		Filename: gunicnh.tem
+
+    # Shield effect sequences
+	idle-shield: shldgenidle.shp  # Ambient shield glow
+		Start: 0
+		Length: 6
+		Tick: 100
+		ZOffset: 2048
+
+	shield-hit: shldgenhit.shp  # Shield getting hit
+		Start: 0
+		Length: 5
+		Tick: 60
+		ZOffset: 2048
+
+	make:
+		Filename: gunmake.shp
+		Length: *
+		Tick: 80
+
+shieldgen.left:
+	Defaults:
+		Filename: hand.shp
+	idle:
+		Filename: hand.shp
+		Start: 0
+	icon:
+		Filename: gunicnh.tem
+
+    # Shield effect sequences
+	idle-shield: shldgenidle.shp  # Ambient shield glow
+		Start: 0
+		Length: *
+		Tick: 100
+
+	shield-hit: shldgenhit.shp  # Shield getting hit
+		Start: 0
+		Length: *
+		Tick: 60
+
+	make:
+		Filename: gunmake.shp
+		Length: *
+		Tick: 80
